@@ -1,0 +1,30 @@
+body{
+  /* background-color: red; */
+  height: 100vh;
+  background-color: #f8f9fa;
+  margin: 0px;
+  padding:0px;
+  width: 100%;
+  /* background-color: lightcyan; */
+}
+.wrapper{
+  /* background-color: lightcyan; */
+  max-width: 100%;
+  padding: 0px;
+
+
+  /* height: 100%; */
+ 
+}
+.main{
+  /* background-color: yellow; */
+  max-width: 95%;
+
+  padding: 0px ;
+  /* height: 100%; */
+  /* padding: 0px 2px 0px 2px ; */
+  margin:0 auto;
+}
+.table-responsive::-webkit-scrollbar {
+  display: none;
+}
