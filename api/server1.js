@@ -22,6 +22,16 @@ app.use(
 app.use(bodyparser.json());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+import dotenv from 'dotenv';
+dotenv.config();
+const mongoURI = process.env.MONGO_URI;
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+.then(() => console.log('MongoDB connected'))
+.catch((err) => console.error('MongoDB connection error:', err));
+console.log("Mongo URI:", process.env.MONGO_URI);
 
 //app.use(express.urlencoded({ extended: true }));
 mongoose
@@ -32,6 +42,17 @@ mongoose
   )
   .then(() => console.log("mongodb connected with new server1"))
   .catch((error) => console.log(error));
+//   mongoose
+//   .connect(
+//     "mongodb+srv://sishfaqhussain233:nYGFsJmXJCsg1Cdp@mernfood.mphwczs.mongodb.net/?retryWrites=true&w=majority&appName=mernFood"
+// ,
+//     { dbname: "mernFood" }
+//   )
+  const MONGO_URI=   "mongodb+srv://sishfaqhussain233:nYGFsJmXJCsg1Cdp@mernfood.mphwczs.mongodb.net/mernFood"
+
+  
+ console.log("monogo url",process.env.MONGO_URI)
+
 // mongodb+srv://sishfaqhussain233:nYGFsJmXJCsg1Cdp@mernfood.mphwczs.mongodb.net/?retryWrites=true&w=majority&appName=mernFood
 // mongoose
 //   .connect(
@@ -512,8 +533,7 @@ app.get("/auth/failure", (req, res) => {
 });
 //verify google tokent reciende  from front end (react)
 //const { OAuth2Client } = require("google-auth-library");
-import dotenv from 'dotenv';
-dotenv.config();
+
 
 import {OAuth2Client} from 'google-auth-library'
 import { Query } from "./QueriesModel.js";
