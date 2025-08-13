@@ -1,3 +1,6 @@
+
+//MONGO_URI= mongodb+srv://sishfaqhussain233:nYGFsJmXJCsg1Cdp@mernfood.mphwczs.mongodb.net/mernFood?retryWrites=true&w=majority
+
 import express from "express";
 import mongoose from "mongoose";
 import { Contact } from "./ContactModal.js";
