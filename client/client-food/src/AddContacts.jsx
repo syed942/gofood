@@ -139,7 +139,7 @@ export const AddContacts = ({
                   <div className="modal-header d-flex justify-content-center align-items-center">
                     <h1 className="modal-title ">
                       {/* {reload ? "Edit contact" : "Add contact"} */}
-                      {id ? "Edit Contact" : "Add Contact"}
+                      {id ? "Edit User" : "Add User"}
                     </h1>
                     {/* <button type="button" class="btn-close"  aria-label="Close"></button> */}
                   </div>

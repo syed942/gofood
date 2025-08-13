@@ -24,14 +24,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 import dotenv from 'dotenv';
 dotenv.config();
-const mongoURI = process.env.MONGO_URI;
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
-.then(() => console.log('MongoDB connected'))
-.catch((err) => console.error('MongoDB connection error:', err));
-console.log("Mongo URI:", process.env.MONGO_URI);
+// const mongoURI = process.env.MONGO_URI;
+// mongoose.connect(process.env.MONGO_URI, {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// })
+// .then(() => console.log('MongoDB connected'))
+// .catch((err) => console.error('MongoDB connection error:', err));
+// console.log("Mongo URI:", process.env.MONGO_URI);
 
 //app.use(express.urlencoded({ extended: true }));
 mongoose
