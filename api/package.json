@@ -4,13 +4,14 @@
   "description": "",
   "main": "server.js",
   "type": "module",
- 
-  "scripts":{
-    "start":"node server.js",
- 
-  "keywords": [],
+    "keywords": [],
   "author": "",
   "license": "ISC",
+ 
+  "scripts":{
+    "start":"node server.js"
+ 
+
 },
   "dependencies": {
     "cors": "^2.8.5",
