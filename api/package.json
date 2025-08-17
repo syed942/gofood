@@ -6,11 +6,12 @@
   "type": "module",
  
   "scripts":{
-    "start":"node server.js"
-  },
+    "start":"node server.js",
+ 
   "keywords": [],
   "author": "",
   "license": "ISC",
+},
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^17.2.0",
@@ -28,3 +29,4 @@
     "path": "^0.12.7"
   }
 }
+
